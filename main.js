@@ -7,3 +7,8 @@
  */
 
 // test
+
+$(document).ready(function(){
+
+     alert("hey");
+});
