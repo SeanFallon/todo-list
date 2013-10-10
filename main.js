@@ -10,5 +10,12 @@
 
 $(document).ready(function(){
 
-     alert("hey");
+     $(".add").click(function(){
+         var addInput = '<input type="checkbox"> <br>'
+         $("#div1").append($("#field").val() + addInput);
+     });
+
+    $(".remove").click(function(){
+       $("#div1").remove();
+    });
 });
