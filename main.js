@@ -15,7 +15,10 @@ $(document).ready(function(){
          $(".ul1").append(addInput);
      });
 
-    $('input[type="checkbox"]').click(function(){
-        $(this).parent().remove()
+    $(document).on("change",'input[type="checkbox"]',function(){      //input[type="checkbox"]
+          //$(this).parent().remove()
+       $('input[type="checkbox"]').each(function(){
+                 $(this).parent().remove();
+        });
     });
 });
