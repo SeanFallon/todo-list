@@ -11,11 +11,11 @@
 $(document).ready(function(){
 
      $(".add").click(function(){
-         var addInput = '<li><input type="checkbox">' + $("#field").val() + '</li> <br>'
+         var addInput = '<li><input type="checkbox">' + $("#field").val() + '</li>'
          $(".ul1").append(addInput);
      });
 
     $('input[type="checkbox"]').click(function(){
-       $(this).parent().remove();
+        $(this).parent().remove()
     });
 });
