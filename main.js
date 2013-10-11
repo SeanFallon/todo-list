@@ -11,8 +11,8 @@
 $(document).ready(function(){
 
      $(".add").click(function(){
-         var addInput = '<li><input type="checkbox"> </li><br>'
-         $(".ul1").append($("#field").val() + addInput);
+         var addInput = '<li><input type="checkbox">' + $("#field").val() + '</li> <br>'
+         $(".ul1").append(addInput);
      });
 
     $('input[type="checkbox"]').click(function(){
