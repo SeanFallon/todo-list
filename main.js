@@ -15,7 +15,7 @@ $(document).ready(function(){
          $(".ul1").append(addInput);
      });
 
-    $(document).on("change",'input[type="checkbox"]',function(){      //input[type="checkbox"]
+    $(document).on("change",".remove",function(){      //input[type="checkbox"]
           //$(this).parent().remove()
        $('input[type="checkbox"]').each(function(){
                  $(this).parent().remove();
